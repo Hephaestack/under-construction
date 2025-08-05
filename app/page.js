@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import NextImage from "next/image";
 
 export default function UnderConstruction() {
   
@@ -50,10 +51,13 @@ export default function UnderConstruction() {
         <div className="relative z-10 flex flex-col items-center justify-center max-w-2xl px-4 mx-auto text-center">
           {/* Logo */}
           <div className="mb-5">
-            <img
+            <NextImage
               src="/logos/Logo.png"
               alt="Πνοή logo"
+              width={168}
+              height={168}
               className="w-auto mx-auto h-42 drop-shadow-lg"
+              priority
             />
           </div>
           
@@ -71,9 +75,11 @@ export default function UnderConstruction() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center transition-opacity duration-300 hover:opacity-75"
               >
-                <img 
+                <NextImage 
                   src="/social icons/icons8-facebook-48.png" 
                   alt="Facebook"
+                  width={32}
+                  height={32}
                   className="w-8 h-8"
                 />
               </a>
@@ -84,9 +90,11 @@ export default function UnderConstruction() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center transition-opacity duration-300 hover:opacity-75"
               >
-                <img 
+                <NextImage 
                   src="/social icons/icons8-instagram-48.png" 
                   alt="Instagram"
+                  width={32}
+                  height={32}
                   className="w-8 h-8"
                 />
               </a>
@@ -106,9 +114,11 @@ export default function UnderConstruction() {
         >
           <div className="flex flex-col items-center gap-4">
             <div className="mb-2">
-              <img
+              <NextImage
                 src="/logos/logo.webp"
                 alt="Πνοή logo"
+                width={96}
+                height={96}
                 className="w-auto h-24 opacity-75"
               />
             </div>
