@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Πνοή - Υπό Κατασκευή",
+  title: "Πνοή",
   description: "Εργαστήρι Χειροποίητου Κοσμήματος",
   icons: {
     icon: "logos/logo.webp",
